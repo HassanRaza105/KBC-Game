@@ -29,11 +29,11 @@ A simple Python quiz game inspired by *KBC* that tests your knowledge of Pakista
 
 Won amount so far:  0
 
-For the prize money of 100 
-Question no. 1 : What is capital of pakistan?
-Your options are: 
-1 peshawar 2 karachi 3 lahore 4 rawalpindi 5 islamabad
-Please choose an answer(Enter one of the option no): 
+- For the prize money of 100 
+- Question no. 1 : What is capital of pakistan?
+- Your options are: 
+- 1 peshawar 2 karachi 3 lahore 4 rawalpindi 5 islamabad
+- Please choose an answer(Enter one of the option no): 
 
 ```bash
 python kbc_quiz.py
