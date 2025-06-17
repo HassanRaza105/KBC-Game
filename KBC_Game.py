@@ -16,7 +16,7 @@ optionList = [
     ["sibi", "quetta", "gwadar", "khuzdar", "zob"],
 ]
 
-prize = list((n + 1) * 100 for n in range(len(questionsList)))
+prize = list((n + 1) * 1000 for n in range(len(questionsList)))
 
 wonAmount = 0
 
@@ -39,11 +39,12 @@ for questionNo in range(len(questionsList)):
             userChoice = int(
                 input("\nPlease choose an answer(Enter one of the option no): ")
             )
-            if userChoice not in range(len(optionList[questionNo]) + 1):
+            if userChoice not in range(1, (len(optionList[questionNo]) + 1)):
                 print("Invalid choice!")
             elif answerList[questionNo] == optionList[questionNo][userChoice - 1]:
                 print("good!")
-                wonAmount = wonAmount + prize[questionNo]
+                wonAmount = prize[questionNo]
+                # wonAmount = wonAmount + prize[questionNo]
                 break
             else:
                 print("In correct! Game Over.")
